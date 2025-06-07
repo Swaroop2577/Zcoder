@@ -14,8 +14,8 @@ app.use(bodyParser());
 app.use(express.urlencoded({extended:true}));
 app.use(cors());
 
-connectToMongoDb('mongodb+srv://swaroopnani:1234@cluster-1.huucn2p.mongodb.net/ZCODER-test?retryWrites=true&w=majority&appName=Cluster-1').then(()=>{
-    console.log('mongo connecrted')
+connectToMongoDb('mongodb+srv://jajamabhijith2004:Devabhi2004@users.ralw0gb.mongodb.net/backend').then(()=>{
+    console.log('mongodb connected successfully')
 })
 
 
