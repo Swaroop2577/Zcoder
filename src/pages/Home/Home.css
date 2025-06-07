@@ -1,0 +1,192 @@
+:root {
+  --home-navbar-bg: #3498fd;
+  --home-navbar-text: #fff;
+  --home-hero-bg: #f6f8fa;
+  --home-hero-title: #222b45;
+  --home-hero-sub: #5c6f8c;
+  --home-card-bg: #fff;
+  --home-card-shadow: 0 6px 32px 0 rgba(52,152,253,0.10), 0 1.5px 6px 0 rgba(0,0,0,0.06);
+  --home-card-border: 1.5px solid #e3e9f2;
+  --home-card-title: #222b45;
+  --home-link: #3498fd;
+  --home-link-hover: #1f6feb;
+  --home-calendar-bg: #f1f3f4;
+  --home-calendar-color: #222b45;
+}
+
+[data-theme="dark"] {
+  --home-navbar-bg: #20293a;
+  --home-navbar-text: #58a6ff;
+  --home-hero-bg: #161b22;
+  --home-hero-title: #f0f6fc;
+  --home-hero-sub: #8b949e;
+  --home-card-bg: #21262d;
+  --home-card-shadow: 0 8px 32px 0 rgba(52,152,253,0.12), 0 1.5px 6px 0 rgba(0,0,0,0.18);
+  --home-card-border: 1.5px solid #30363d;
+  --home-card-title: #f0f6fc;
+  --home-link: #58a6ff;
+  --home-link-hover: #1f6feb;
+  --home-calendar-bg: #232a34;
+  --home-calendar-color: #f0f6fc;
+}
+
+body {
+  background: var(--home-hero-bg);
+}
+
+.nav-bar {
+  background: var(--home-navbar-bg);
+  color: var(--home-navbar-text);
+  padding: 1.1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e3e9f2;
+}
+
+.nav-bar h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  color: var(--home-navbar-text);
+  text-shadow: 0 2px 12px rgba(52,152,253,0.13);
+  background: none;
+}
+
+.nav-bar ul {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-bar a {
+  color: var(--home-navbar-text);
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  transition: color 0.2s, background 0.2s;
+}
+.nav-bar .active,
+.nav-bar a:hover {
+  background: rgba(255,255,255,0.10);
+  color: var(--home-link-hover);
+}
+
+.hero-section {
+  text-align: center;
+  padding: 3.5rem 2rem 2rem 2rem;
+  border-radius: 0 0 24px 24px;
+  margin-bottom: 2rem;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  color: var(--home-hero-title);
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.hero-tagline {
+  font-size: 1.18rem;
+  color: var(--home-hero-sub);
+  margin-bottom: 0.5rem;
+}
+
+.contests-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 2.5rem;
+  padding: 2rem 0;
+}
+
+.calendar-container, .recent-contests {
+  background: var(--home-card-bg);
+  border-radius: 18px;
+  box-shadow: var(--home-card-shadow);
+  border: var(--home-card-border);
+  padding: 2.5rem 2rem;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+
+.calendar-container:hover, .recent-contests:hover {
+  box-shadow: 0 16px 48px 0 rgba(52,152,253,0.16), 0 3px 12px 0 rgba(0,0,0,0.14);
+  border-color: var(--home-link-hover);
+}
+
+.subheading {
+  color: var(--home-card-title);
+  font-size: 1.35rem;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.contests-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.contest-item {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.contest-item a {
+  color: var(--home-link);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+.contest-item a:hover {
+  color: var(--home-link-hover);
+  text-decoration: underline;
+}
+
+.calender {
+  background: #a2c8ff;;
+  color: var(--home-calendar-color);
+  border-radius: 12px;
+  padding: 1.5rem 1rem 1rem 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 12px rgba(52,152,253,0.09);
+  border: 1.5px solid var(--home-card-border);
+  width: 100%;
+  max-width: 340px;
+}
+
+.contest-dot {
+  height: 8px;
+  width: 8px;
+  background: var(--home-link-hover);
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+@media (max-width: 1000px) {
+  .contests-section {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem 0;
+  }
+  .calendar-container, .recent-contests {
+    width: 100%;
+    padding: 1.5rem 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  .calendar-container, .recent-contests {
+    padding: 1rem 0.5rem;
+  }
+}

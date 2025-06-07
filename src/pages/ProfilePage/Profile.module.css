@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Old+Mincho&display=swap');
+
+:root {
+  --txt-color: #24292f;
+  --input-boxColor: #fff;
+  --button-color: #007bff;
+  --button-txt: white;
+  --button-hovr: #0056b3;
+}
+
+[data-theme="dark"] {
+  --txt-color: #f0f6fc;
+  --input-boxColor: #161b22;
+  --button-color: #58a6ff;
+  --button-txt: #0d1117;
+  --button-hovr: #1f6feb;
+}
+
+.Appp {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  /* min-height: 100vh; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.title {
+  padding: 10px 200px;
+  border-bottom: 1px solid var(--txt-color);
+  color: var(--txt-color);
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.profile {
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.userInfo {
+  display: flex;
+  gap: 10px;
+  font-size: larger;
+}
+
+.techStacks, .languages {
+  margin-top: 10px;
+  max-height: 150px;
+  overflow: auto;
+}
+
+.languages::-webkit-scrollbar,
+.techStacks::-webkit-scrollbar {
+  display: none;
+}
+
+.techStack, .languageItem, .friendsItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--input-boxColor);
+  margin-bottom: 5px;
+  padding: 0 5px;
+}
+
+.user-info {
+  margin: 20px 0;
+}
+.user-info p {
+  margin: 5px 0;
+  color: var(--txt-color);
+}
+
+.friends {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.p {
+  white-space: nowrap;
+}
+.searchUser {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 20px 0px;
+}
+.searchButton {
+  margin-left: 25px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--button-color);
+  color: var(--button-txt);
+  cursor: pointer;
+}
+.userDisplay {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.friendsContainer {
+  display: flex;
+  flex-direction: column;
+}
+.friendsList {
+  overflow: auto;
+  max-height: 400px;
+}
+.pbutton {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--button-color);
+  color: var(--button-txt);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.pbutton:hover {
+  background-color: var(--button-hovr);
+}
+.pinput[type="text"] {
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.ph2 {
+  margin: 15px 0;
+  color: var(--txt-color);
+  white-space: nowrap;
+}
+.ratings {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.input {
+  display: flex;
+  gap: 10px;
+}
+.userLabel{
+font-size: 1.3rem;
+}
+.userValue{
+  font-size: 1.1rem;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
