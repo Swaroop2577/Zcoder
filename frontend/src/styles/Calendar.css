@@ -4,19 +4,19 @@
     align-items: center;
     min-height: 90vh;
     padding: 20px;
-    background: #1A1B26;
+    background: #f7fafc; /* very light blue-gray */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .calendar-wrapper {
-    background: #252737;
+    background: #e3ecf7; /* light blue */
     border-radius: 12px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 32px rgba(33, 150, 243, 0.10); /* soft blue shadow */
     padding: 20px;
     width: 90vw;
     max-width: 1200px;
     height: 70vh;
-    border: 1px solid #333;
+    border: 1px solid #b5c8e6;
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -45,8 +45,8 @@
 }
 
 .nav-button {
-    background: #1A1B26;
-    color: #fff;
+    background: #e1f5fe;
+    color: #17406a;
     border: none;
     border-radius: 6px;
     width: 35px;
@@ -57,28 +57,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #444;
+    border: 1px solid #b5c8e6;
 }
 
 .nav-button:hover {
-    background: #252737;
-    border-color: #555;
+    background: #cbe3f7;
+    border-color: #90caf9;
 }
 
 .nav-button.year-nav {
-    background: #1A1B26;
-    border-color: #3a3a3a;
+    background: #e1f5fe;
+    border-color: #b5c8e6;
 }
 
 .nav-button.year-nav:hover {
-    background: #252737;
-    border-color: #4a4a4a;
+    background: #cbe3f7;
+    border-color: #90caf9;
 }
 
 .month-year {
     font-size: 20px;
     font-weight: 600;
-    color: #ffffff;
+    color: #234055;
     margin: 0;
     min-width: 180px;
     text-align: center;
@@ -88,7 +88,7 @@
 .calendar-grid {
     border-radius: 8px;
     overflow: hidden;
-    border: 1px solid #333;
+    border: 1px solid #b5c8e6;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -97,7 +97,7 @@
 .days-header {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    background: #1A1B26;
+    background: #e1f5fe;
     flex-shrink: 0;
 }
 
@@ -105,11 +105,11 @@
     padding: 12px 8px;
     text-align: center;
     font-weight: 600;
-    color: #ccc;
+    color: #1976d2;
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    border-right: 1px solid #333;
+    border-right: 1px solid #b5c8e6;
 }
 
 .day-header:last-child {
@@ -120,7 +120,7 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    background: #1A1B26;
+    background: #f7fafc;
     flex: 1;
 }
 
@@ -128,15 +128,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-right: 1px solid #333;
-    border-bottom: 1px solid #333;
+    border-right: 1px solid #b5c8e6;
+    border-bottom: 1px solid #b5c8e6;
     cursor: pointer;
     font-size: 13px;
     font-weight: 500;
     transition: all 0.2s ease;
     position: relative;
-    color: #fff;
-    background: #1A1B26;
+    color: #234055;
+    background: #f7fafc;
     flex-direction: column;
     gap: 2px;
 }
@@ -146,30 +146,31 @@
 }
 
 .calendar-day:hover {
-    background: #1A1B26;
-    color: #fff;
+    background: #e3ecf7;
+    color: #1976d2;
 }
 
 .calendar-day.empty {
     cursor: default;
-    background: #252737;
-    color: #555;
+    background: #e3ecf7;
+    color: #b5c8e6;
 }
 
 .calendar-day.empty:hover {
-    background: #252737;
+    background: #e3ecf7;
 }
 
-/* Single color for all contests - removed platform-specific colors */
+/* Single color for all contests - blue accent */
 .calendar-day.has-contest {
-    background: #00D4FF;
-    color: #ffffff;
+    background: #90caf9;
+    color: #17406a;
     font-weight: 600;
     position: relative;
 }
 
 .calendar-day.has-contest:hover {
-    background: #00A8D4;
+    background: #42a5f5;
+    color: #fff;
 }
 
 .day-number {
@@ -189,14 +190,14 @@
 .contest-dot {
     width: 5px;
     height: 5px;
-    background: #00ff88;
+    background: #1976d2;
     border-radius: 50%;
     font-size: 0;
 }
 
 .contest-count {
     font-size: 8px;
-    background: #ff4444;
+    background: #42a5f5;
     color: white;
     border-radius: 50%;
     width: 12px;
@@ -213,9 +214,9 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    background: #1A1B26;
+    background: #e1f5fe;
     border-radius: 8px;
-    border: 1px solid #333;
+    border: 1px solid #b5c8e6;
     padding: 15px;
     overflow: hidden;
 }
@@ -228,12 +229,12 @@
 }
 
 .contests-section h3 {
-    color: #ffffff;
+    color: #1976d2;
     margin-bottom: 15px;
     font-size: 16px;
     font-weight: 600;
     text-align: center;
-    border-bottom: 2px solid #00D4FF;
+    border-bottom: 2px solid #42a5f5;
     padding-bottom: 8px;
     flex-shrink: 0;
 }
@@ -248,21 +249,21 @@
 }
 
 .contest-item {
-    background: #1A1B26;
+    background: #f7fafc;
     padding: 15px;
     border-radius: 8px;
-    border: 1px solid #333;
+    border: 1px solid #b5c8e6;
     transition: all 0.3s ease;
     flex-shrink: 0;
 }
 
 .contest-item:hover {
-    border-color: #00A8D4;
-    background: #252737;
+    border-color: #42a5f5;
+    background: #e3ecf7;
 }
 
 .contest-item h4 {
-    color: #00D4FF;
+    color: #1976d2;
     margin-bottom: 10px;
     font-size: 14px;
     font-weight: 600;
@@ -274,19 +275,19 @@
 
 .contest-item p {
     margin: 6px 0;
-    color: #ccc;
+    color: #234055;
     font-size: 12px;
     line-height: 1.4;
 }
 
 .label {
     font-weight: 600;
-    color: #fff;
+    color: #17406a;
 }
 
 /* Single color for all platform badges */
 .platform-badge {
-    background: #00D4FF;
+    background: #42a5f5;
     color: white;
     padding: 2px 6px;
     border-radius: 4px;
@@ -300,24 +301,24 @@
     display: inline-block;
     margin-top: 10px;
     padding: 6px 12px;
-    background: #00D4FF;
+    background: #42a5f5;
     color: white;
     text-decoration: none;
     border-radius: 4px;
     font-size: 11px;
     font-weight: 500;
     transition: all 0.3s ease;
-    border: 1px solid #00D4FF;
+    border: 1px solid #42a5f5;
 }
 
 .contest-link:hover {
-    background: #00A8D4;
-    border-color: #00A8D4;
+    background: #1976d2;
+    border-color: #1976d2;
 }
 
 .no-contests {
     text-align: center;
-    color: #ccc;
+    color: #b5c8e6;
     font-size: 12px;
     padding: 20px;
     flex: 1;
@@ -328,25 +329,25 @@
 
 .loading {
     text-align: center;
-    color: #fff;
+    color: #42a5f5;
     padding: 40px;
 }
 
 .loading-spinner {
     font-size: 20px;
     margin-bottom: 15px;
-    color: #00D4FF;
+    color: #1976d2;
 }
 
 .error-message {
-    background: #cc0000;
+    background: #e57373;
     color: white;
     padding: 12px;
     border-radius: 6px;
     margin-top: 15px;
     text-align: center;
     font-size: 12px;
-    border: 1px solid #aa0000;
+    border: 1px solid #c62828;
 }
 
 /* Custom scrollbar for contests list */
@@ -355,17 +356,17 @@
 }
 
 .contests-list::-webkit-scrollbar-track {
-    background: #1A1B26;
+    background: #e1f5fe;
     border-radius: 3px;
 }
 
 .contests-list::-webkit-scrollbar-thumb {
-    background: #00D4FF;
+    background: #90caf9;
     border-radius: 3px;
 }
 
 .contests-list::-webkit-scrollbar-thumb:hover {
-    background: #00A8D4;
+    background: #42a5f5;
 }
 
 /* Responsive Design */

@@ -55,11 +55,10 @@ function Home() {
         <section className="hero">
           <div className="hero-content">
             <h1>
-              <span className="hero-accent">Elevate</span> Your Coding Journey
+              <span className="hero-accent">Ignite</span> Your Coding Passion
             </h1>
             <p className="hero-subtitle">
-              Practice, collaborate, compete, and learn—all in one powerful
-              platform designed for developers.
+              Build Skills, Connect with Peers, and Compete—Your Ultimate Coding Arena
             </p>
             <div className="hero-cta">
               <button
@@ -79,7 +78,7 @@ function Home() {
           <div className="hero-image">
             <div className="code-snippet">
               <pre>
-                {`// Welcome to Zcoder\nfunction greet() {\n  console.log("Happy coding!");\n}`}
+                {`// Welcome to Zcoder\nfunction ignite() {\n  console.log("Let the code spark! 🔥");\n}`}
               </pre>
             </div>
           </div>

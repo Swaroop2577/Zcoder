@@ -1,16 +1,17 @@
-/* Discussions.css - Theme Update */
+/* Discussions.css - Light Blue Theme */
+
 .discussions-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
-  background-color: var(--primary-background);
-  color: var(--text-primary);
+  background-color: #f7fafc;    /* Very light blue-gray */
+  color: #234055;               /* Deep navy for main text */
   min-height: 100vh;
 }
 
 .discussions-container h1 {
-  color: var(--primary-accent);
-  border-bottom: 2px solid var(--highlight);
+  color: #1976d2;               /* Strong blue accent */
+  border-bottom: 2px solid #90caf9; /* Soft blue highlight */
   padding-bottom: 0.5rem;
   margin-bottom: 2rem;
 }
@@ -22,18 +23,18 @@
 }
 
 .solution-card {
-  border: 1px solid var(--highlight);
+  border: 1px solid #90caf9;        /* Soft blue border */
   border-radius: 8px;
   padding: 1.5rem;
-  background-color: var(--secondary-background);
+  background-color: #e3ecf7;        /* Light blue card */
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .solution-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.15);
-  border-color: var(--primary-accent);
+  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.15); /* Blue shadow */
+  border-color: #1976d2;           /* Strong blue on hover */
 }
 
 .solution-header {
@@ -48,21 +49,21 @@
 
 .author {
   font-weight: bold;
-  color: var(--primary-accent);
+  color: #1976d2;                  /* Strong blue */
 }
 
 .votes {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--text-primary);
+  color: #234055;                  /* Deep navy */
   font-weight: 600;
 }
 
 .vote-btn {
-  background: rgba(123, 44, 191, 0.2);
-  color: var(--text-secondary);
-  border: 1px solid var(--secondary-accent);
+  background: #e1f5fe;             /* Pale blue */
+  color: #7a8ea6;                  /* Muted blue-gray */
+  border: 1px solid #42a5f5;       /* Sky blue border */
   border-radius: 4px;
   width: 28px;
   height: 28px;
@@ -74,22 +75,22 @@
 }
 
 .vote-btn:hover {
-  background-color: var(--secondary-accent);
-  color: white;
+  background-color: #42a5f5;       /* Sky blue */
+  color: #fff;                     /* White text */
 }
 
 .date {
-  color: var(--text-secondary);
+  color: #7a8ea6;                  /* Muted blue-gray */
   font-size: 0.8rem;
 }
 
 .solution-code {
-  background-color: rgba(0, 212, 255, 0.1);
+  background-color: #e1f5fe;       /* Pale blue */
   padding: 1rem;
   border-radius: 4px;
-  border: 1px solid var(--highlight);
+  border: 1px solid #90caf9;       /* Soft blue */
   font-family: "Fira Code", monospace;
-  color: var(--text-primary);
+  color: #234055;
   overflow-x: auto;
   margin: 1rem 0;
 }
@@ -106,29 +107,29 @@
 }
 
 .language {
-  background-color: rgba(123, 44, 191, 0.2);
+  background-color: #e1f5fe;       /* Pale blue */
   padding: 0.2rem 0.8rem;
   border-radius: 999px;
-  color: var(--text-secondary);
+  color: #7a8ea6;
   font-weight: 500;
-  border: 1px solid var(--secondary-accent);
+  border: 1px solid #42a5f5;
 }
 
 .empty-state {
   text-align: center;
-  color: var(--text-secondary);
+  color: #7a8ea6;
   padding: 2rem;
-  background-color: var(--secondary-background);
+  background-color: #e3ecf7;
   border-radius: 8px;
-  border: 1px dashed var(--highlight);
+  border: 1px dashed #90caf9;
 }
 
 .error-message {
-  color: var(--error);
-  background-color: rgba(255, 76, 76, 0.1);
+  color: #d32f2f;
+  background-color: rgba(211, 47, 47, 0.08);
   padding: 1rem;
   border-radius: 4px;
-  border: 1px solid var(--error);
+  border: 1px solid #d32f2f;
   margin: 1rem 0;
 }
 

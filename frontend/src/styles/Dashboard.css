@@ -1,12 +1,12 @@
 .dashboard-page {
-  background-color: var(--primary-background);
-  color: var(--text-primary);
+  background-color: #f7fafc; /* Very light blue-gray */
+  color: #234055;            /* Deep navy for text */
   padding: 20px;
   min-height: 100vh;
 }
 
 .dashboard-page h1 {
-  color: var(--primary-accent);
+  color: #1976d2;            /* Strong blue accent */
   margin-bottom: 20px;
 }
 
@@ -22,39 +22,39 @@
 .tag-button {
   padding: 6px 12px;
   border-radius: 20px;
-  background-color: var(--secondary-background);
-  border: 1px solid var(--highlight);
-  color: var(--text-primary);
+  background-color: #e3ecf7;   /* Light blue */
+  border: 1px solid #90caf9;   /* Soft blue border */
+  color: #234055;              /* Deep navy text */
   cursor: pointer;
   font-size: 14px;
   transition: all 0.2s;
 }
 
 .tag-button:hover {
-  background-color: var(--highlight);
-  color: white;
+  background-color: #90caf9;   /* Blue on hover */
+  color: #fff;                 /* White text */
 }
 
 .tag-button.selected {
-  background-color: var(--primary-accent);
-  border-color: var(--primary-accent);
-  color: var(--primary-background);
+  background-color: #1976d2;   /* Strong blue */
+  border-color: #1976d2;
+  color: #f7fafc;              /* Light background for contrast */
   font-weight: bold;
 }
 
 .filter-mode-toggle {
   margin-bottom: 1rem;
-  color: var(--text-primary);
+  color: #234055;
 }
 
 .filter-mode-toggle p {
   margin-bottom: 8px;
-  color: var(--text-secondary);
+  color: #7a8ea6;              /* Muted blue-gray */
 }
 
 .filter-mode-toggle button {
-  background-color: var(--secondary-accent);
-  color: white;
+  background-color: #42a5f5;   /* Sky blue */
+  color: #fff;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 6px;
@@ -64,11 +64,11 @@
 }
 
 .filter-mode-toggle button:hover {
-  background-color: var(--highlight);
+  background-color: #90caf9;
 }
 
 .tag-filters p {
-  color: var(--text-secondary);
+  color: #7a8ea6;
   margin-bottom: 8px;
 }
 
@@ -83,11 +83,10 @@
   gap: 15px;
 }
 
-
 .no-problems {
-  color: var(--text-secondary);
+  color: #7a8ea6;
   text-align: center;
   padding: 20px;
-  background-color: var(--secondary-background);
+  background-color: #e3ecf7;
   border-radius: 8px;
 }

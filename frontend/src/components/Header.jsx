@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import "./Header.css";
-import Logo from '../assets/logo-noBg.png';
+import Logo from "../assets/updatedLogo3.png"
 
 function Header() {
   const navigate = useNavigate();
@@ -43,7 +43,7 @@ function Header() {
           <li><NavLink to="/dashboard" onClick={handleLinkClick}>Dashboard</NavLink></li>
           <li><NavLink to="/rooms" onClick={handleLinkClick}>Rooms</NavLink></li>
           <li><NavLink to="/calendar" onClick={handleLinkClick}>Calender</NavLink></li>
-          <li><NavLink to="/askAi" onClick={handleLinkClick}>Ask AI</NavLink></li>
+          <li><NavLink style={{textWrap:"nowrap"}} to="/askAi" onClick={handleLinkClick}>Ask AI</NavLink></li>
           <li><NavLink to="/bookmarks" onClick={handleLinkClick}>Bookmarks</NavLink></li>
           <li><NavLink to="/profile" onClick={handleLinkClick}>Profile</NavLink></li>
           <li className="logout-btn">
