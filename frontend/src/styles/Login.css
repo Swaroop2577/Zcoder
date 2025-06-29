@@ -47,6 +47,8 @@
   filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.5));
   transition: transform 0.4s ease, filter 0.4s ease;
   border-radius: 6px;
+  object-fit: cover;
+    height: 70px;
 }
 
 .logo:hover {
@@ -170,7 +172,7 @@
 .login-footer {
   color: var(--text-primary);
   text-align: center;
-  margin-top: 2rem;
+  margin-top: -3%;
   position: relative;
   text-shadow: 0 0 5px rgba(0, 212, 255, 0.3);
   width: 100%;

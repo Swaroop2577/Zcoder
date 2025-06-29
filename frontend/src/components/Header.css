@@ -23,11 +23,12 @@ nav {
 
 /* Logo */
 .nav-logo {
-    height: 5vw;
-    width: 100%;
+    height: 70px;
+    max-width: 100%;
     display: block;
     object-fit: cover;
     cursor: pointer;
+    width: 220px;
 }
 
 /* Hamburger */

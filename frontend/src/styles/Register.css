@@ -11,21 +11,25 @@
 }
 
 .register-container {
-  background: var(--secondary-background);
-  padding: 3rem;
-  border-radius: 16px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  width: 100%;
-  max-width: 450px;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-  backdrop-filter: blur(12px);
-  border: 1px solid var(--primary-accent);
-  transform-style: preserve-3d;
-  perspective: 1200px;
-  transition: transform 0.5s ease;
-  margin: 1rem;
+    background: var(--secondary-background);
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--primary-accent);
+    transform-style: preserve-3d;
+    perspective: 1200px;
+    transition: transform 0.5s ease;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    scale: 0.8;
+    margin-top: -10%;
 }
 
 .register-container:hover {
@@ -59,12 +63,12 @@
 }
 
 .register-footer {
-  color: var(--text-primary);
-  text-align: center;
-  margin-top: 2rem;
-  position: relative;
-  z-index: 1;
-  text-shadow: 0 0 5px rgba(0, 212, 255, 0.3);
+    color: var(--text-primary);
+    text-align: center;
+    margin-top: -3%;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 0 5px rgba(0, 212, 255, 0.3);
 }
 
 .register-footer a {

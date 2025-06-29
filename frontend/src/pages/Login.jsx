@@ -1,4 +1,4 @@
-import logo from "../assets/logo-bg.png";
+import logo from '../assets/updatedLogo5.png'
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import "../styles/Login.css";
