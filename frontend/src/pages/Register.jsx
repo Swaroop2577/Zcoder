@@ -20,7 +20,7 @@ function RegisterPage() {
     form.reset();
     setHide(true);
     try {
-      const response = await fetch(`${backend}/register/`, {
+      const response = await fetch(`${backend}register/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
